@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Projetos</title>
+    <meta name="description" content="Meta descrição pro Google">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Projetos"/>
+    <meta property="og:description" content="Meta descrição pro Google"/>
+    <meta property="og:url" content="http://seusite.com"/>
+    <meta property="og:image" content="http://seusite.com/img/og-image.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      $(window).on("scroll", function() {
+		if($(window).scrollTop() > 500) {
+			$("#tab_menu").addClass("menubg_scroll");
+		} else {
+			//remove o bg preto
+		   $("#tab_menu").removeClass("menubg_scroll");
+		}
+	});
+      
+      $('.nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+
+        $('html, body').animate({ 
+            scrollTop: targetOffset - 140
+        }, 800);
+    });
+    </script>
+  </head>
+  <body>
+    <div id="tab_menu">
+      <header>
+
+        <div class="container">
+          <div id="logo">
+            <a href="index.html"><img src="img/logo_menu.png"></a>
+          </div>
+
+          <nav>
+           <ul class="nav">
+             <li><a href="index.html#servicos">serviços</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="projetos.html">cases</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="index.html#sobre">sobre</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="#contato">contato</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+    </div>
+    <div class="al"></div>
+    <section class="menuprojects">
+      <div class="itemenu">
+        <a href="projetos.html" class="linkfiltro"><h2 class="titleproj">Todos</h2></a>
+      </div>
+      <div class="itemenu">
+        <a href="urb.html" class="linkfiltro"><h2 class="titleproj">Urb</h2></a>
+        <h3 class="projfont-2">Placemaking<br>
+            Placebranding<br>
+            Revitalização</h3>
+        <p class="proj-p">O espaço público é a nossa grande casa coletiva.
+        Acreditamos que ao cuidarmos bem dela
+        melhoramos tudo (e todos) ao redor. Nossos
+        </p>
+      </div>
+      <div class="itemenu ">
+        <a href="lab.html" class="linkfiltro"><h2 class="titleproj">Lab</h2></a>
+        <h3 class="projfont-2">Co-lab<br>
+            Proj. Proprietário<br>
+            Incentivo</h3>
+        <p class="proj-p">No nosso laboratório de soluções inovadoras
+          desenvolvemos propostas que fogem do lugar
+          comum.</p>
+      </div>
+      <div class="itemenu ">
+        <a href="live.html" class="linkfiltro"><h2 class="titleproj">Live</h2></a>
+        <h3 class="projfont-2">Events<br>
+            Exhibitions<br>
+            Fairs</h3>
+        <p class="proj-p">A cidade é feita de e para as pessoas. Realizamos
+        eventos que reforçam o valor da troca e da
+        presença</p>
+      </div>
+      <div class="itemenu itemmenu-todos itemenu-ativo">
+        <a href="visual.html" class="linkfiltro"><h2 class="titleproj">Visual</h2></a>
+        <h3 class="projfont-2">Branding<br>
+            Vídeo<br>
+            Motion</h3>
+        <p class="proj-p">Imagens também contam histórias incríveis.
+          Desenvolvemos linguagens visuais para diversos
+          negócios alinhando</p>
+      </div>
+      <div class="itemenu">
+        <a href="proprietarios.html" class="linkfiltro"><h2 class="titleproj">Proprietários</h2></a>
+        <h3 class="projfont-2">Projetos<br>
+            Proprietários<br>
+            Visionartz</h3>
+        <p class="proj-p">Cases autorais, pensados 360 graus, do início ao
+        fim, pela nossa equipe de visionários. São os
+        projetos da casa</p>
+      </div>
+    </section>
+
+    <section class="bl1 bl1proj">
+<!--     <img src="img/bg_projetos.jpg" class="bg-projetos">-->
+      <div class="projetos-bg"></div>
+      <div class="menuprojects">
+        <div class="blproj">
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto1.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="imgproj">
+          <img src="img/projetos_galeria_foto2.jpg">
+          <div class="overlay">
+            <div class="overlay-1">
+              <h3 class="overlay-font1">RuaCityLab</h3>
+            </div>
+            <div class="overlay-2">
+              <h3 class="overlay-font2">Branding<br>
+              Vídeo<br>
+              Motion</h3>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      </div>
+    </section>
+
+    <section class="contato-proj" id="contato">
+      <div class="container">
+        <div class="social">
+          <img src="img/projetos_insta_logo.png" class="instaico">
+        </div>
+        <h4 class="visiop">hello@visionartz.com.br</h4>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Modelo de Site 1</title>
+    <meta name="description" content="Meta descrição pro Google">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Modelo de Site 1"/>
+    <meta property="og:description" content="Meta descrição pro Google"/>
+    <meta property="og:url" content="http://seusite.com"/>
+    <meta property="og:image" content="http://seusite.com/img/og-image.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+    $(window).on("scroll", function() {
+		if($(window).scrollTop() > 500) {
+			$("#tab_menu").addClass("menubg_scroll");
+		} else {
+			//remove o bg preto
+		   $("#tab_menu").removeClass("menubg_scroll");
+		}
+	});
+      
+      $('.nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+
+        $('html, body').animate({ 
+            scrollTop: targetOffset - 120
+        }, 800);
+    });
+    </script>
+  </head>
+  <body>
+    <div id="tab_menu">
+      <header>
+
+        <div class="container">
+          <div id="logo">
+            <a href="index.html"><img src="img/logo_menu.png"></a>
+          </div>
+
+          <nav>
+           <ul class="nav">
+             <li><a href="#servicos">serviços</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="projetos.html">cases</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="#sobre">sobre</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="#contato">contato</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+    </div>
+    <section class="introducao">
+    <section class="visiogeometric">
+      <div class="container">
+        <h1><font style="color:#f8d110">transformamos</font> as grandes cidades<br>
+          criando <span style="background:#f8d110">&nbsp;novas conexões</span> entre<br>
+          o<span style="background:#000"> espaço urbano e as pessoas&nbsp;</span></h1>
+        <div class="setban">
+          <img src="img/seta-banner.png">
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="bl1">
+      <div class="container">
+        <div class="hello">
+          <img src="img/hello.png" class="helloimg">
+        </div>
+        <div class="visionario">
+          <div class="bgfont-black" id="sobre"><h2 class="subtitulo">Enxergamos o presente 
+          além do aqui-agora.</h2></div>
+          <img src="img/visionario.jpg" class="visionarioimg">
+        </div>
+        <div class="ybl">
+          <article class="article-bold">
+            Pensamos projetos capazes de deixar legados para um futuro melhor.</article>
+          <article class="article-thin">
+           Enxergamos a arte além da estética. Vemos nela um potencial transformador: de pessoas, de lugares e de histórias. Idealizamos e produzimos projetos criativos com propósito com o objetivo de revitalizar espaços públicos, fortalecer comunidades, gerar experiências e impactos positivos nas grandes cidades a longo prazo. <br><br> 
+
+            Somos visionários pragmáticos: damos forma a ideias inovadoras através de iniciativas possíveis. Conciliamos a ousadia de imaginar além com a capacidade de realizar. Dessa dinâmica nasceram projetos únicos como ArtRua, maior feira de arte urbana da América Latina; MAUP, primeiro museu a céu aberto do Rio de Janeiro e Rio Walls, a maior intervenção artística em solo carioca.
+          </article>
+        </div>
+        <div class="vic">
+          <img src="img/destacimg-2.png" class="helloimg">
+        </div>
+      </div>
+    </section>
+    <section class="bl2" id="servicos">
+      <div class="blblack"><h2 class="subtitulo-1">nossos serviços</h2></div>
+      <div class="urb">
+        <div class="logoservices">
+          <img src="img/urb.png">
+        </div>
+        <div class="text">
+          <h3 class="subtitulo-ser">Placemaking<br>
+              Placebranding<br> 
+              Revitalização</h3>
+          <p class="sub-ser">O espaço público é a nossa grande casa coletiva.
+          Acreditamos que ao cuidarmos bem dela
+          melhoramos tudo (e todos) ao redor. Nossos
+          projetos de ocupação e transformação urbana
+          criam novas relações entre a cidade e as pessoas
+          através de experiências artísticas surpreendentes.</p>
+        </div>
+      </div>
+      <!--texto mobile-->
+      <div class="text-mob">
+          <h3 class="subtitulo-ser">Placemaking Placebranding Revitalização</h3>
+          <p class="sub-ser">O espaço público é a nossa grande casa coletiva.
+          Acreditamos que ao cuidarmos bem dela
+          melhoramos tudo (e todos) ao redor. Nossos
+          projetos de ocupação e transformação urbana
+          criam novas relações entre a cidade e as pessoas
+          através de experiências artísticas surpreendentes.</p>
+        </div>
+      <!--texto mobile-->
+      <div class="lab">
+        <div class="text-r">
+          <h3 class="subtitulo-ser">
+            Co-lab<br>
+            Proj. Proprietário<br>
+            Incentivo</h3>
+          <p class="sub-ser">No nosso laboratório de soluções inovadoras
+          desenvolvemos propostas que fogem do lugar
+          comum. Estamos sempre desenvolvendo
+          estratégias que dialogam com as urgências dos
+          novos tempos e possam reinventar de forma
+          positiva a vida nas grandes cidades.</p>
+        </div>
+        <div class="logoservices-r">
+          <img src="img/lab.png">
+        </div>
+      </div>
+      <!--texto mobile-->
+      <div class="text-mob">
+          <h3 class="subtitulo-ser">
+            Co-labProj. Proprietário Incentivo</h3>
+          <p class="sub-ser">No nosso laboratório de soluções inovadoras
+          desenvolvemos propostas que fogem do lugar
+          comum. Estamos sempre desenvolvendo
+          estratégias que dialogam com as urgências dos
+          novos tempos e possam reinventar de forma
+          positiva a vida nas grandes cidades.</p>
+        </div>
+      <!--texto mobile-->
+      <div class="live">
+        <div class="logoservices">
+          <img src="img/live.png">
+        </div>
+        <div class="text">
+          <h3 class="subtitulo-ser">Events<br>
+              Exhibitions<br> 
+              Fairs</h3>
+          <p class="sub-ser">A cidade é feita de e para as pessoas. Realizamos
+          eventos que reforçam o valor da troca e da
+          presença: um convite à ocupação do espaço
+          urbano através de festas, exposições, feiras e
+          experiências que celebram a potência do coletivo.</p>
+        </div>
+      </div>
+      <!--texto mobile-->
+      <div class="text-mob">
+          <h3 class="subtitulo-ser">Events Exhibitions Fairs</h3>
+          <p class="sub-ser">A cidade é feita de e para as pessoas. Realizamos
+          eventos que reforçam o valor da troca e da
+          presença: um convite à ocupação do espaço
+          urbano através de festas, exposições, feiras e
+          experiências que celebram a potência do coletivo.</p>
+        </div>
+      <!--texto mobile-->
+      <div class="visual">
+        <div class="text-r">
+          <h3 class="subtitulo-ser">
+            Branding<br>
+            Vídeo<br>
+            Motion</h3>
+          <p class="sub-ser">Imagens também contam histórias incríveis.
+          Desenvolvemos linguagens visuais para diversos
+          negócios alinhando arte e estratégia através de
+          times de criativos escolhidos por meio de uma
+          curadoria cuidadosa para cada perfil de cliente.</p>
+        </div>
+        <div class="logoservices-r">
+          <img src="img/visual.png">
+        </div>
+      </div>
+      <!--texto mobile-->
+      <div class="text-mob">
+          <h3 class="subtitulo-ser">Branding Vídeo Motion</h3>
+          <p class="sub-ser">Imagens também contam histórias incríveis.
+          Desenvolvemos linguagens visuais para diversos
+          negócios alinhando arte e estratégia através de
+          times de criativos escolhidos por meio de uma
+          curadoria cuidadosa para cada perfil de cliente.</p>
+      </div>
+      <!--texto mobile-->
+      <div class="projvisio">
+        <div class="logoservices-ppv">
+          <img src="img/tag_projetos.png">
+        </div>
+        <div class="text">
+          <h3 class="subtitulo-ser">Projetos<br>
+              Proprietários<br> 
+              Visionartz</h3>
+          <p class="sub-ser">Cases autorais, pensados 360 graus, do início ao
+          fim, pela nossa equipe de visionários. São os
+          projetos da casa, idealizados e desenvolvidos por
+          nós em cada detalhe. Eles fazem parte do nosso
+          DNA e refletem a nossa vontade de inovação!</p>
+        </div>
+      </div>
+      <!--texto mobile-->
+      <div class="text-mob">
+          <h3 class="subtitulo-ser">Projetos Proprietários Visionartz</h3>
+          <p class="sub-ser">Cases autorais, pensados 360 graus, do início ao
+          fim, pela nossa equipe de visionários. São os
+          projetos da casa, idealizados e desenvolvidos por
+          nós em cada detalhe. Eles fazem parte do nosso
+          DNA e refletem a nossa vontade de inovação!</p>
+      </div>
+      <!--texto mobile-->
+      <img src="img/icomais.png" class="icomais">
+    </section>
+    <section class="srt">
+      <div class="bl1">
+        <div class="mart">
+          <img src="img/martin.png" class="martindek">
+          <div class="balao">
+          <article class="font-ballon">“a diferença entre um sonhador e um visionário
+         é que o sonhador tem os olhos fechados 
+         e o visionário tem os olhos abertos.”</article>
+
+         <cite class="font-cite">Martin Lutter King</cite>
+          </div>
+        </div>
+        <div class="ybox"><h2 class="font-cases">clipping</h2></div>
+        <div class="blwhite">
+          <div class="slideshow-container">
+            <div class="mySlides1 fade ">
+              <div class="row">
+                <div class="column">
+                  <img src="img/img-clip-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+              </div>
+            </div>
+            <div class="mySlides1 fade">
+              <div class="row">
+                <div class="column">
+                  <img src="img/img-clip-4.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-2.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="img/img-clip-1.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+              </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-1.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-2.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-3.jpg">
+                    </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-4.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-4.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-3.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-2.jpg">
+                  </div>
+
+                  <div class="mySlidesmodal">
+                    <img src="img/img-clip-1.jpg">
+                  </div>
+
+                  <a class="prevmodal" onclick="plusSlidesmodal(-1)">&#10094;</a>
+                  <a class="nextmodal" onclick="plusSlidesmodal(1)">&#10095;</a>
+                </div>
+              </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)"><img src="img/seta-clip1.png"></a>
+            <a class="next" onclick="plusSlides(1, 0)"><img src="img/seta-clip2.png"></a>
+          </div>
+
+          <div class="slideshow-container">
+            <div class="ybox ybox2"><h2 class="font-cases">clientes</h2></div>
+            <div class="mySlides2 fade mob">
+              <img src="img/logo_tishman.jpg">
+              <img src="img/logo_cisco.jpg">
+              <img src="img/logo_riogaleao.jpg">
+              <img src="img/logo_rock_in_rio.jpg">
+              <img src="img/logo_suvinil.jpg">
+              <img src="img/logo_nike.jpg">
+              <img src="img/logo_mills.jpg">
+              <img src="img/logo_shopping-leblon.jpg">
+            </div>
+
+            <div class="mySlides2 fade mob">
+              <img src="img/logo_suvinil.jpg">
+              <img src="img/logo_nike.jpg">
+              <img src="img/logo_mills.jpg">
+              <img src="img/logo_shopping-leblon.jpg">
+              <img src="img/logo_tishman.jpg">
+              <img src="img/logo_cisco.jpg">
+              <img src="img/logo_riogaleao.jpg">
+              <img src="img/logo_rock_in_rio.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)"><img src="img/seta-clip1.png"></a>
+            <a class="next" onclick="plusSlides(1, 1)"><img src="img/seta-clip2.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="yellow2">
+      <img src="img/img-inart.png"
+>
+      <div class="tagvisionarios"><h3 class="subtitulo-ser">os visionários</h3></div>
+      
+    </section>
+    <section class="bl1 vsp">
+      <div class="slideshow-container">
+        <div class="mySlides3 fade">
+          <div class="encap">
+            <img src="img/visionarios_img1.jpg">
+            <p class="namevisio">#JanesJacob</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img2.jpg">
+            <p class="namevisio">@ateliercruzdiez</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img3.jpg">
+            <p class="namevisio">@kaws</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img4.jpg">
+            <p class="namevisio">@jaimelernerarquitetos</p>
+          </div>
+        </div>
+
+        <div class="mySlides3 fade">
+          <div class="encap">
+            <img src="img/visionarios_img3.jpg">
+            <p class="namevisio">@kaws</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img2.jpg">
+            <p class="namevisio">@ateliercruzdiez</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img4.jpg">
+            <p class="namevisio">@jaimelernerarquitetos</p>
+          </div>
+          <div class="encap">
+            <img src="img/visionarios_img1.jpg">
+            <p class="namevisio">#JanesJacob</p>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)"><img src="img/seta-clip1.png"></a>
+        <a class="next" onclick="plusSlides(1, 2)"><img src="img/seta-clip2.png"></a>
+      </div>
+    </section>
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="hellocontact">
+          <img src="img/contato_hello.png">
+        </div>
+      <div class="endcontact">
+        <div class="divmail">
+          <p class="mailfont">email</p><h4 class="mailcontactfont">hello@visionartz.com.br</h4>
+        </div>
+        <div class="divphone">
+          <p class="mailfont">telefone</p><h4 class="mailcontactfont">(21) 99999-8989</h4>
+        </div>
+      </div>
+        <div class="social">
+          <img src="img/instagram_icon.png" class="instaico">
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

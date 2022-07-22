@@ -1,0 +1,474 @@
+/*Estilo para laptop++*/
+@media only screen and (min-width: 900px) and (max-width: 1440px) {
+  header {
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .text {
+    margin-left: 58%;
+  }
+  .text-r {
+    margin-left: 11%;
+  }
+  .logoservices-ppv {
+    width: 550px;
+    left: 9%;
+  }
+  .modal-content {
+    width: 59%;
+  }
+  
+  /*Projetos*/
+  .projfont-2 {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+}
+
+/*Estilo para notebook*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  
+  header {
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .text {
+    margin-left: 58%;
+  }
+  .text-r {
+    margin-left: 11%;
+  }
+  .logoservices-ppv {
+    width: 550px;
+    left: 9%;
+  }
+  /*Projetos*/
+  .projfont-2 {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+  .itemenu {
+    width: 15.85%;
+  }
+  .menuprojects {
+    width: 1280px;
+  }
+  .modal-content {
+    width: 62%;
+  }
+}
+/*Estilo para laptop*/
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+  
+  .text {
+    margin-left: 58%;
+  }
+  .text-r {
+    margin-left: 8%;
+  }
+  .logoservices-ppv {
+    width: 550px;
+    left: 9%;
+  }
+  
+  /*Projetos*/
+  .projfont-2 {
+    font-size: 23px;
+    margin-bottom: 7px;
+  }
+  .menuprojects {
+    width: 1230px;
+  }
+  .itemenu {
+    width: 15.85%;
+    padding-left: 10px;
+  }
+  .titleproj {
+    font-size: 28px;
+  }
+}
+/*Estilo para tablets-pro*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+/*Estilo para tablets*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+/*Estilo para smartphone*/
+@media only screen and (max-width: 767px) {
+  
+  #logo {
+    width: 147px;
+  }
+  #logo img {
+    width: 100%;
+  }
+  nav {
+    width: 50%;
+  }
+  header {
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .separador-menu {
+    display: none;
+  }
+  
+  .subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .subtitulo-1 {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+  }
+  .subtitulo-ser {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+  } 
+  .sub-ser {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18px;
+    font-style: italic;
+    color: #000;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .article-bold {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .article-thin {
+    font-size: 14px;
+  }
+  .titleyellow {
+    font-size: 54px;
+    font-weight: 300;
+    color: #fff;
+    padding: 0px 86px;
+  }
+  .font-ballon {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  .font-cite {
+    font-size: 18px;
+    color: #f8d110;
+  }
+  .font-cases {
+    font-size: 28px;
+  }
+  .namevisio {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  .visiop {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .container {
+    width: 100%
+  }
+  .visiogeometric {
+    height: 550px;
+  }
+  .introducao {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 0;
+  }
+  .introducao h1 {
+    font-size: 43px;
+    color: #fff;
+    font-weight: 300;
+    padding: 100px 15px;
+  }
+  .setban {
+    margin: 0 auto;
+  }
+  .bl1 {
+    padding: 0 0 30px 0;
+  }
+  .hello {
+    width: 300px;
+    text-align: center;
+    margin: 60px auto;
+  }
+  .helloimg {
+    width: 300px;
+    margin: 30px auto;
+    position: relative;
+    top: 0;
+  }
+  .visionario {
+    position: relative;
+    width: 320px;
+    height: 228px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .visionarioimg {
+    position: relative;
+    width: 173px;
+    height: 228px;
+    left: 0;
+    top: 65px;
+    margin: 0 auto;
+  }
+  .bgfont-black {
+    width: 320px;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  .ybl {
+    width: 320px;
+    height: 475px;
+    padding: 70px 15px;
+    left: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .vic {
+    width: 300px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .blblack {
+    width: 143px;
+    height: 37px;
+    margin: 0 auto;
+    top: -12px;
+    padding: 5px;
+  }
+  .urb, .lab, .live, .visual, .projvisio {
+    width: 100%;
+    height: 166px;
+    background: url("../img/serv_img_urb-mob.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .lab {
+    background: url("../img/serv_img_lab-mob.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .live {
+    background: url("../img/serv_img_live-mob.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .visual {
+    background: url("../img/serv_img_visual-mob.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .projvisio {
+    background: url("../img/serv_img_ppv-mob.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .logoservices, .logoservices-r, .logoservices-ppv {
+    width: 90px;
+    position: relative;
+    float: none;
+    top: 56px;
+    left: 0;
+    margin: 0 auto;
+  }
+  .logoservices-ppv {
+    width: 300px;
+  }
+  .text, .text-r {
+    display: none;
+  }
+  .text-mob {
+    display: block;
+    padding: 10px 20px;
+  }
+  .icomais {
+    width: 80px;
+    top: 34px;
+  }
+  .srt {
+    padding-top: 60px;
+    height: 1338px;
+  }
+  .martindek {
+    display: none;
+  }
+  .balao {
+    width: 338px;
+    height: 169px;
+    background: url(../img/bg_martin_lk.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 10px 44px 10px 10px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .mart {
+    width: 300px;
+  }
+  .blwhite {
+    width: 90%;
+    height: 785px;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
+  .tagvisionarios {
+    width: 224px;
+    height: 45px;
+    padding-top: 5px;
+    top: 20px;
+  }
+  .vsp {
+    padding-top: 45px;
+  }
+  .yellow2 {
+    padding: 15px 0 0px 0;
+  }
+  .hellocontact {
+    width: 300px;
+    margin: 45px auto;
+    text-align: center;
+  }
+  .hellocontact img{
+    width: 300px;
+  }
+  .endcontact {
+    width: 300px; 
+  }
+  .divmail, .divphone {
+    width: 300px;
+    height: 50px;
+    float: none;
+    margin: 30px auto;
+    padding-top: 12px;
+  }
+  .mailfont, .mailcontactfont {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .instaico {
+    margin: 0px auto;
+  }
+  .mob {
+    display: none;
+  }
+  .slideshow-container {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .row, .mySlides2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .column {
+    width: 125px;
+    height: auto;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .prev, .next {
+    top: 42%;
+  }
+  .prev img, .next img {
+    width: 14px;
+  }
+  .mySlides1 img, .mySlides2 img, .mySlides3 img {
+    width: 125px;
+    height: auto;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mySlides2 img {
+    width: 105px;
+  }
+  .modal-content {
+    width: 100%;
+    padding-top: 60px;
+  }
+  .mySlidesmodal img {
+    width: auto;
+    height: 300px;
+  }
+  .prevmodal, .nextmodal {
+    top: 61%;
+  }
+  .ybox, .ybox2 {
+    width: 120px;
+    height: 43px;
+    top: 23px;
+  }
+  .ybox2 {
+    top: 0;
+  }
+  .encap {
+    width: 125px;
+    overflow: hidden;
+  }
+  .mySlides3 {
+    padding-top: 0;
+  }
+  
+  /*Projetos*/
+  
+  .menuprojects {
+    width: 320px;
+  }
+  .titleproj {
+    font-size: 22px;
+  }
+  .projfont-2 {
+    font-size: 18px;
+  }
+  .proj-p {
+    display: none;
+  }
+  .itemenu {
+    width: 150px;
+    height: 165px;
+    float: left;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+  .blproj {
+    width: 320px;
+    padding: 40px 0;
+  }
+  .imgproj {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+  .contato-proj {
+    width: 100%;
+    height: 175px;
+    padding-top: 30px;
+  }
+  .social {
+    max-width: 52px;
+    margin: 15px auto;
+  }
+}

@@ -1,0 +1,936 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+.fixmenu {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+}
+/*menu*/
+  #origamid-menu {	visibility: hidden;
+  position: absolute;
+  background: black;	
+  width: auto;
+  width: 100%;
+  padding: 20px;
+  right: 0;
+  top: 50px;
+  text-align: left;
+  opacity: 0;
+  transform: translate(-20px, 0px);
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.4);
+  z-index: 999;
+}
+
+#origamid-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: .3s ease;
+}
+
+#origamid-menu li {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  border-top: 2px solid;
+}
+
+#origamid-menu li:last-of-type {
+  border-bottom: 2px solid;
+}
+
+#origamid-menu li a {
+  display: block;
+  float: none;
+  padding: 10px;
+  margin: 0px;
+  border: none;
+  min-width: 140px;
+}
+
+#origamid-menu li a:hover {
+  background: white;
+  color: black;
+}
+
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 57px;
+	height: 29px;
+    background: url("../img/menu_mobile-v4.png") no-repeat center;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+/* Hamburger animado */
+/*
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 30px;
+    background: url("../img/menu_mobile.png") no-repeat center;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#origamid-icon::before, #origamid-icon::after {
+	content: '';
+	display: block;
+	height: 4px;
+	transition: .3s;
+}
+
+#origamid-icon::before {
+	background: white;
+	margin-bottom: 8px;
+}
+
+#origamid-icon::after {
+	box-shadow: 0 4px 0 0 white, 0 -4px 0 0 white;
+}
+
+#origamid-icon.active::before, #origamid-icon.active::after {
+	width: 80%;
+	background: white;
+	box-shadow: none;
+}
+
+#origamid-icon.active::before {
+	transform: rotate(45deg) translate(7px, 4px);
+}
+
+#origamid-icon.active::after {
+	transform: rotate(-225deg) translate(-4px, 1px);
+}
+*/
+/* Final Hamburger animado */
+
+#logo {
+  width: 30%;
+  float: left;
+  font-size: 2em;
+}
+
+nav {
+  width: 70%;
+  text-align: right;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: #f8d110;
+}
+
+header {
+  background: #fff;
+  padding: 20px 20px;
+}
+
+header::after, header::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+#tab_menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 99999;
+}
+#tab_menu.menubg_scroll {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.separador-menu {
+  position: relative;
+  top: 8px;
+}
+
+p {
+  font-size: 30px;
+  line-height: 20px;
+  color: #000;
+}
+
+.mailfont {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  display: inline-block;
+}
+.mailcontactfont {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.titulo {
+  font-size: 78px;
+  font-weight: 300;
+  color: #fff;
+}
+.subtitulo {
+  font-size: 47px;
+  line-height: 60px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+}
+.visiop {
+  font-size: 30px;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+}
+.namevisio {
+  font-size: 18px;
+  margin-left: 10px;
+  text-align: initial;
+}
+.article-bold {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+.article-thin {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000;
+}
+.subtitulo-1 {
+  font-size: 39px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+}
+.subtitulo-ser {
+  font-size: 61px;
+  font-weight: 300;
+  color: #000;
+}
+.titleyellow {
+  font-size: 180px;
+  font-weight: 300;
+  color: #fff;
+}
+.sub-ser {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 28px;
+  font-style: italic;
+  color: #000;
+}
+.font-cases {
+  font-size: 45px;
+  font-style: italic;
+  color: #fff;
+}
+.font-ballon {
+  font-size: 25px;
+  font-weight: 400;
+  color: #f8d110;
+  margin-bottom: 15px;
+}
+.font-cite {
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  color: #000;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.container:after, .container:before {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+.visiogeometric {
+  width: 100%;
+  height: 761px;
+  background: url("../img/mask-header.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.introducao {
+  width: 100%;
+  height: 761px;
+  background: url("../img/Header_img.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 150px;
+}
+.introducao h1 {
+  font-size: 57px;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 14%;
+}
+.setban {
+  width: 84px;
+  text-align: center;
+  margin: 33% auto;
+  position: relative;
+}
+.bl1 {
+  width: 100%;
+  padding: 60px 0;
+}
+.hello {
+  width: 1024px;
+  text-align: center;
+  margin: 0px auto 210px auto;
+}
+.vic {
+  width: 1024px;
+  text-align: center;
+  margin: 0px auto 150px auto;
+}
+.ybl {
+  width: 1000px;
+  height: 467px;
+  background: #f8d110;
+  float: left;
+  padding: 8% 7% 5% 39%;
+  position: relative;
+  margin: 0px auto 195px auto;
+}
+.visionario {
+  width: 441px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+.visionarioimg {
+  width: 338px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 89px;
+  left: 22px;
+}
+.bgfont-black {
+  width: 599px;
+  position: absolute;
+  z-index: 3;
+  left: -49px;
+  top: -65px;
+}
+.bl2 {
+  width: 100%;
+  background: #fed200;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.bl2:after, .bl2:before {
+  content: " ";
+  display: table;
+}
+
+.bl2:after {
+  clear: both;
+}
+.bl2 img {
+  display: block;
+  max-width: 100%;
+}
+.blblack {
+  width: 271px;
+  height: 57px;
+  background: #000;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+  white-space: nowrap;
+}
+.logoservices {
+  width: 272px;
+  position: absolute;
+  float: left;
+  top: 30%;
+  left: 27%;
+}
+.logoservices-ppv {
+  width: 656px;
+  position: absolute;
+  float: left;
+  top: 36%;
+  left: 14%;
+}
+.text {
+  width: 420px;
+  float: left;
+  margin-left: 57%;
+}
+.logoservices-r {
+  width: 272px;
+  position: absolute;
+  float: left;
+  top: 40%;
+  right: 18%;
+}
+.text-r {
+  width: 466px;
+  float: left;
+  margin-left: 22%;
+}
+
+.text-mob {
+  display: none;
+}
+.urb, .lab, .live, .visual, .projvisio {
+  width: 100%;
+  height: 382px;
+  background: url("../img/urbvisio-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.lab {
+  background: url("../img/labvisio-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.live {
+  background: url("../img/livevisio-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.visual {
+  background: url("../img/visualvisio-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.projvisio {
+  background: url("../img/projvision-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.icomais {
+  width: 149px;
+  margin: 0 auto;
+  position: relative;
+  top: 62px;
+}
+.srt {
+  width: 100%;
+  height: 1316px;
+  background: url("../img/bg-street.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 60px;
+}
+.mart {
+  width: 842px;
+  margin: 0 auto;
+}
+.martindek {
+  width: 208px;
+  height: auto;
+  position: relative;
+  top: -30px;
+  float: left;
+}
+.balao {
+  width: 634px;
+  height: 188px;
+  background: url("../img/balaofala.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 67px;
+  padding-right: 54px;
+  float: left;
+}
+.blwhite {
+  width: 1173px;
+  height: 736px;
+  margin: 0 auto;
+  clear: both;
+  background: #fff;
+  padding-top: 85px;
+}
+.ybox, .ybox2 {
+  width: 213px;
+  height: 67px;
+  background: #f8d110;
+  text-align: center;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+  top: 32px;
+  padding-top: 5px;
+}
+.ybox2 {
+  top: 0;
+  margin-top: 55px;
+}
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1040px;
+  position: relative;
+  margin: auto;
+}
+.mySlides1, .mySlides2, .mySlides3 {
+  text-align: center;
+}
+.mySlides2 {
+  width: 1000px;
+  margin: 30px auto;
+}
+.mySlides3 {
+  padding-top: 60px;
+}
+
+.mySlides1 img, .mySlides2 img, .mySlides3 img {
+  width: 204px;
+  height: 204px;
+  display: inline-block;
+}
+.mySlides2 img {
+  width: 178px;
+  height: 130px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mySlides3 img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: yellow;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Lightbox*/
+.row {
+  width: 1024px;
+  margin: 0 auto;
+}
+.row > .column {
+  padding: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 204px;
+  height: 204px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 0;
+  width: 44%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 9999999;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesmodal {
+  display: none;
+  text-align: center;
+}
+.mySlidesmodal img {
+  width: auto;
+  height: 830px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevmodal,
+.nextmodal {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextmodal {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevmodal:hover,
+.nextmodal:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.yellow2 {
+  width: 100%;
+  background: #f8d110;
+  text-align: center;
+  padding: 60px 0 0px 0;
+}
+.yellow2 img {
+  width: 90%;
+  margin: 0 auto;
+}
+.tagvisionarios {
+  width: 495px;
+  height: 114px;
+  background: url("../img/tag_os_visionarios.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 15px;
+  top: 46px;
+}
+.vsp {
+  padding-top: 90px;
+}
+.encap {
+  display: inline-block;
+}
+.contato {
+  width: 100%;
+  height: 610px;
+  background:  url('../img/bg-contato.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.hellocontact {
+  width: 100%;
+  margin: 80px auto 60px auto;
+  text-align: center;
+}
+.divmail, .divphone {
+  width: 450px;
+  height: 77px;
+  background: #fff;
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+.endcontact {
+  width: 1024px;
+  margin: 60px auto;
+  position: relative;
+}
+.social {
+  max-width: 52px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  position: relative;
+}
+.instaico {
+  margin: 30px auto;
+}
+
+/*Projetos*/
+
+.linkfiltro {
+    text-decoration: none;
+    color: #000;
+  }
+
+.al {
+  width: 100%;
+  height: 100px;
+}
+.mpl {
+  width: 100%;
+  max-height: 450px;
+}
+
+.menuprojects {
+  width: 1366px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+.menuprojects:after, .menuprojects:before {
+  content: " ";
+  display: table;
+}
+.menuprojects:after {
+  clear: both;
+}
+.blproj {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.bl1proj {
+  padding: 0 0 30px 0;
+}
+.itemenu {
+  width: 15.93%;
+  height: 290px;
+  float: left;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.itemenu-ativo {
+  background: #f8d110;
+  padding-bottom: 10px;
+}
+.itemmenu-todos {
+  height: 294px;
+}
+.titleproj {
+  font-size: 30px;
+  color: #000;
+  font-weight: 400;
+}
+.titleproj:after {
+  content: " ";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #000;
+  margin: 10px 0 20px 0;
+}
+.projfont-2 {
+  font-size: 26px;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.proj-p {
+  font-size: 10px;
+  font-weight: 100;
+  padding: 0 19px 0 0px;
+}
+.overlay-font1 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+.overlay-font2 {
+  font-size: 11px;
+  font-weight: 300;
+  color: #000;
+}
+.bg-projetos {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.projetos-bg {
+  width: 100%;
+  height: 482px;
+  background: url("../img/bg_projetos.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-attachment: fixed;*/
+  position: absolute;
+  z-index: 1;
+}
+.imgproj {
+  width: 25%;
+  height: 256px;
+  float: left;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.overlay {
+  background: #fff;
+  position: absolute;
+  top: 75%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 54px;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.overlay-1, .overlay-2 {
+  width: 45%;
+  float: left;
+  padding: 10px 30px;
+}
+.overlay-2 {
+  width: 55%;
+}
+
+.imgproj:hover .overlay{
+  opacity: 1;
+}
+.imgproj img {
+  width: 100%;
+  -moz-transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.imgproj:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contato-proj {
+  width: 100%;
+  height: 222px;
+  background:  url('../img/projetos_rodape_bg.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+}

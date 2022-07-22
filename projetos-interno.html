@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Projetos Interno</title>
+    <meta name="description" content="Meta descrição pro Google">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Projetos"/>
+    <meta property="og:description" content="Meta descrição pro Google"/>
+    <meta property="og:url" content="http://seusite.com"/>
+    <meta property="og:image" content="http://seusite.com/img/og-image.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-projetos.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/responsivo-projetos.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      $(window).on("scroll", function() {
+		if($(window).scrollTop() > 500) {
+			$("#tab_menu").addClass("menubg_scroll");
+		} else {
+			//remove o bg preto
+		   $("#tab_menu").removeClass("menubg_scroll");
+		}
+	});
+      
+      $('.nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+
+        $('html, body').animate({ 
+            scrollTop: targetOffset - 140
+        }, 800);
+    });
+    </script>
+  </head>
+  <body>
+    <div id="tab_menu">
+      <header>
+
+        <div class="container">
+          <div id="logo">
+            <a href="index.html"><img src="img/logo_menu.png"></a>
+          </div>
+
+          <nav>
+           <ul class="nav">
+             <li><a href="index.html#servicos">serviços</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="projetos.html">cases</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="index.html#sobre">sobre</a> <img src="img/div_menu.png" class="separador-menu"> </li>
+             <li><a href="#contato">contato</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+    </div>
+    <div class="al"></div>
+    <div class="container-full hgt">
+    <div class="slideshow-container">
+
+        <div class="mySlides-proj fade">
+          <img src="img/projetos-interna/slide-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides-proj fade">
+          <img src="img/projetos-interna/slide-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides-proj fade">
+          <img src="img/projetos-interna/slide-1.jpg" style="width:100%">
+        </div>
+
+        <a class="prev-proj" onclick="plusSlides(-1)"><img src="img/projetos-interna/seta-1.png"></a>
+        <a class="next-proj" onclick="plusSlides(1)"><img src="img/projetos-interna/seta-2.png"></a>
+
+        </div>
+        <br>
+
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      <div class="imgcanto">
+        <img src="img/projetos-interna/destaque-esquerda.jpg" class="dir">
+        <img src="img/projetos-interna/destaque-direita.jpg" class="esq">
+      </div>
+    </div>
+    
+    <div class="yellow-proj">
+      <div class="container">
+        <div class="grid-y">
+          <h1 class="titulo-proj">ArtRua</h1> <p class="titulo-ver">versão 01</p>
+        </div>
+        <div class="grid-y1">
+          <h3 class="titulo-ano">2015</h3>
+          <p class="desc-proj"><font style="font-style: italic">Artistas:</font><br>
+            Enivo / Tinho / Toz / Alto contraste / Enivo / Tinho / Toz</p>
+          
+            <p class="desc-proj"><font style="font-style: italic">Galerias:</font><br>
+            Enivo / Tinho / Toz / Alto contraste / Enivo / Toz / Tinho 
+              / Alto contraste</p>
+          
+            <p class="desc-proj"><font style="font-style: italic">Mural Externo:</font><br>
+              Toz / Alto contraste</p>
+          
+            <p class="desc-proj"><font style="font-style: italic">Mural Externo:</font><br>
+            Toz / Alto contraste</p> 
+        </div>
+        
+        <div class="grid-y2">
+          <p class="titulo2">Acreditamos que o ambiente tem a capacidade de nos tornar pessoas melhores ambiente tem a creditamos que o.</p>
+          <p class="desc-proj">Acreditamos que o ambiente tem a capacidade de nos</p>
+          <p class="desc-proj">tornar pessoas melhores Acreditamos que o ambiente tem a capacidade de nos tornar pessoas melhores. Acreditamos que o ambiente tem a capacidade de nos tornar pessoas.</p>
+          <p class="desc-proj">Capacidade de nos tornar pessoas melhores tem a</p>
+        </div>
+        <div class="grid-y3">
+          <a href="">&#10094;</a>outros projetos<a href="">&#10095;</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-full">
+      <img src="img/projetos-interna/bg-proj-interna.jpg" class="video-proj">
+      <div class="container videomob">
+        <video class="video-c" width="100%" height="587" controls>
+          <source src="http://www.paralleloestudio.com/visionartz/img/projetos-interna/video-teste.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    
+    <div class="container-full">
+      <div class="container galeriabox">
+        <div class="row">
+          <div class="column">
+            <img src="img/projetos-interna/light-1.jpg" style="width:100%" onclick="openModal();currentSlidebox(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-2.jpg" style="width:100%" onclick="openModal();currentSlidebox(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-1.jpg" style="width:100%" onclick="openModal();currentSlidebox(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-2.jpg" style="width:100%" onclick="openModal();currentSlidebox(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-1.jpg" style="width:100%" onclick="openModal();currentSlidebox(5)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-2.jpg" style="width:100%" onclick="openModal();currentSlidebox(6)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-1.jpg" style="width:100%" onclick="openModal();currentSlidebox(7)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/projetos-interna/light-2.jpg" style="width:100%" onclick="openModal();currentSlidebox(8)" class="hover-shadow cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <img src="img/projetos-interna/light-2.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlidesbox(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesbox(1)">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-full">
+      <div class="container otherproj">
+        <div class="ybox-int"><h2 class="font-cases font-casesint">clipping</h2></div>
+        
+        <div class="clips">
+          <a href=""><img src="img/projetos-interna/img-clip-1.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-2.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-3.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-4.jpg"></a>
+        </div>
+        
+        <div class="ybox-int yboxproj"><h2 class="font-cases font-casesint">outros projetos</h2></div>
+        
+        <div class="clips">
+          <a href=""><img src="img/projetos-interna/img-clip-1.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-2.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-3.jpg"></a>
+          <a href=""><img src="img/projetos-interna/img-clip-4.jpg"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <section class="contato-proj" id="contato">
+      <div class="container">
+        <div class="social">
+          <img src="img/projetos_insta_logo.png" class="instaico">
+        </div>
+        <h4 class="visiop">hello@visionartz.com.br</h4>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script src="js/js-slide-interna.js"></script>
+    <script>
+     function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndexbox = 1;
+      showSlidesbox(slideIndexbox);
+
+      function plusSlidesbox(n) {
+        showSlidesbox(slideIndexbox += n);
+      }
+
+      function currentSlidebox(n) {
+        showSlidesbox(slideIndexbox = n);
+      }
+
+      function showSlidesbox(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndexbox = 1}
+        if (n < 1) {slideIndexbox = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndexbox-1].style.display = "block";
+        dots[slideIndexbox-1].className += " active";
+        captionText.innerHTML = dots[slideIndexbox-1].alt;
+      }
+    </script>
+  </body>
+</html>
